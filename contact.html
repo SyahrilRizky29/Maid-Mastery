@@ -90,7 +90,7 @@
 										<span class="fa fa-map-marker"></span>
 									</div>
 									<div class="text">
-										<p><span>Alamat:</span> Jl. Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</p>
+										<p><span>Alamat:</span> <a href="https://maps.app.goo.gl/Z8jxM1fCKq5k3zyt5">Jl. Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</p></a> 
 									</div>
 								</div>
 							</div>
@@ -110,7 +110,7 @@
 										<span class="fa fa-paper-plane"></span>
 									</div>
 									<div class="text">
-										<p><span>Email:</span> <a href="mailto:maidmastery@gmail.com">maidmastery@gmail.com</a>
+										<p><span>Email:</span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=your-email@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda.">maidmastery@gmail.com</a>
 										</p>
 									</div>
 								</div>
@@ -121,7 +121,7 @@
 										<span class="fa fa-globe"></span>
 									</div>
 									<div class="text">
-										<p><span>Website</span> <a href="#">maidmastery.xyz</a></p>
+										<p><span>Website</span> <a href="https://maid-mastery.vercel.app/">maidmastery.vercel.app</a></p>
 									</div>
 								</div>
 							</div>
@@ -139,37 +139,34 @@
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="name">Nama Lengkap</label>
-													<input type="text" class="form-control" name="name" id="name"
-														placeholder="Nama Anda">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Nama Anda" required>
 												</div>
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
 													<label class="label" for="email">Alamat Email</label>
-													<input type="email" class="form-control" name="email" id="email"
-														placeholder="Email">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject"
-														placeholder="Subject">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="#">Pesan</label>
-													<textarea name="message" class="form-control" id="message" cols="30"
-														rows="4" placeholder="Pesan"></textarea>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Pesan" required></textarea>
 												</div>
 											</div>
+									
 											<div class="col-md-12">
 												<div class="form-group">
-													<input type="submit" value="Kirim" class="btn btn-primary">
+													<a href="https://mail.google.com/mail/?view=cm&fs=1&to=maidmaster@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda." target="_blank" id="sendEmailBtn" class="btn btn-primary">Kirim</a>
 													<div class="submitting"></div>
 												</div>
-											</div>
+											</div>																															
 										</div>
 									</form>
 								</div>
@@ -257,7 +254,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
-					<h2 class="footer-heading">Quick Links</h2>
+					<h2 class="footer-heading">Link Cepat</h2>
 					<ul class="list-unstyled">
 						<li><a href="#" class="py-1 d-block">Home</a></li>
 						<li><a href="#" class="py-1 d-block">About</a></li>
@@ -271,16 +268,15 @@
 					<h2 class="footer-heading">Hubungi Kami</h2>
 					<div class="block-23 mb-3">
 						<ul>
-							<li><span class="icon fa fa-map-marker"></span><span class="text">Jl. Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</span></li>
-							<li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+62 812 7450 213</span></a></li>
-							<li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">maidmastery@gmail.com</span></a></li>
+							<li><a href="https://maps.app.goo.gl/Z8jxM1fCKq5k3zyt5"><span class="icon fa fa-map-marker"></span><span class="text">Jl. Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</span></a></li>
+							<li><a href="https://wa.me/628158099761"><span class="icon fa fa-phone"></span><span class="text">+62 812 7450 213</span></a></li>
+							<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=your-email@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda."><span class="icon fa fa-paper-plane"></span><span class="text">maidmastery@gmail.com</span></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="row mt-5">
 				<div class="col-md-12 text-center">
-
 					<p class="copyright">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
@@ -317,6 +313,39 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+        document.getElementById('sendEmailBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah link default behavior (navigasi)
+
+            let isValid = true;
+            let inputs = document.querySelectorAll('input[required], textarea[required]');
+            
+            inputs.forEach(input => {
+                if (!input.value) {
+                    isValid = false;
+                    input.style.borderColor = 'red'; // Highlight field if empty
+                } else {
+                    input.style.borderColor = ''; // Reset border color if input is filled
+                }
+            });
+
+            if (!isValid) {
+                alert('Tolong lengkapi semua form yang wajib diisi!'); // Custom alert
+            } else {
+                // Jika form valid, membuka link email dengan data yang diisi
+                let name = document.getElementById('name').value;
+                let email = document.getElementById('email').value;
+                let subject = document.getElementById('subject').value;
+                let message = document.getElementById('message').value;
+
+                let mailtoLink = `mailto:maidmaster@gmail.com?subject=${encodeURIComponent(subject)}&body=Nama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0APesan:%0A${encodeURIComponent(message)}`;
+                
+                // Membuka aplikasi email dengan data yang telah diisi
+                window.location.href = mailtoLink;
+            }
+        });
+    </script>
 
 </body>
 
