@@ -25,17 +25,19 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-12 col-md d-flex align-items-center">
-					<p class="mb-0 phone"><span class="mailus">Nomor Wangsaff:</span> <a href="#">+62 815 8099 761</a> atau <span
-							class="mailus">Email Kami:</span> <a href="#">maidmastery@gmail.com</a></p>
+					<p class="mb-0 phone"><span class="mailus">Nomor Wangsaff:</span> <a href="#">+62 815 8099 761</a>
+						atau <span class="mailus">Email Kami:</span> <a href="#">maidmastery@gmail.com</a></p>
 				</div>
 				<div class="col-12 col-md d-flex justify-content-md-end">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
 							<a href="#" class="d-flex align-items-center justify-content-center"><span
 									class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-							<a href="https://wa.me/628158099761" class="d-flex align-items-center justify-content-center"><span 
-								class="fa fa-whatsapp"><i class="sr-only">WhatsApp</i></span></a>									
-							<a href="https://www.instagram.com/maid_mastery?igsh=MWU2MTg1dWRqanVoaQ==" class="d-flex align-items-center justify-content-center"><span
+							<a href="https://wa.me/628158099761"
+								class="d-flex align-items-center justify-content-center"><span class="fa fa-whatsapp"><i
+										class="sr-only">WhatsApp</i></span></a>
+							<a href="https://www.instagram.com/maid_mastery?igsh=MWU2MTg1dWRqanVoaQ=="
+								class="d-flex align-items-center justify-content-center"><span
 									class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 						</p>
 					</div>
@@ -93,7 +95,8 @@
 										<span class="fa fa-map-marker"></span>
 									</div>
 									<div class="text">
-										<p><span>Alamat:</span> <a href="https://maps.app.goo.gl/Z8jxM1fCKq5k3zyt5">Jl. Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</p></a> 
+										<p><span>Alamat:</span> <a href="https://maps.app.goo.gl/Z8jxM1fCKq5k3zyt5">Jl.
+												Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</p></a>
 									</div>
 								</div>
 							</div>
@@ -103,7 +106,8 @@
 										<span class="fa fa-phone"></span>
 									</div>
 									<div class="text">
-										<p><span>Phone:</span> <a href="https://wa.me/628158099761">+62 815 8099 761</a></p>
+										<p><span>Phone:</span> <a href="https://wa.me/628158099761">+62 815 8099 761</a>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -113,7 +117,8 @@
 										<span class="fa fa-paper-plane"></span>
 									</div>
 									<div class="text">
-										<p><span>Email:</span> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=your-email@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda.">maidmastery@gmail.com</a>
+										<p><span>Email:</span> <a
+												href="https://mail.google.com/mail/?view=cm&fs=1&to=your-email@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda.">maidmastery@gmail.com</a>
 										</p>
 									</div>
 								</div>
@@ -124,7 +129,8 @@
 										<span class="fa fa-globe"></span>
 									</div>
 									<div class="text">
-										<p><span>Website</span> <a href="https://maid-mastery.vercel.app/">maidmastery.vercel.app</a></p>
+										<p><span>Website</span> <a
+												href="https://maid-mastery.vercel.app/">maidmastery.vercel.app</a></p>
 									</div>
 								</div>
 							</div>
@@ -132,7 +138,7 @@
 						<div class="row no-gutters">
 							<div class="col-md-7">
 								<div class="contact-wrap w-100 p-md-5 p-4">
-									<h3 class="mb-4">Hubungi Kami!</h3>
+									<h3 class=" mb-4" style="font-weight: bold;">Form Pesanan</h3>
 									<div id="form-message-warning" class="mb-4"></div>
 									<div id="form-message-success" class="mb-4">
 										Silahkan isi form berikut ini:
@@ -147,35 +153,70 @@
 											</div>
 											<div class="col-md-6">
 												<div class="form-group">
+													<label class="label" for="phone">Nomor Telepon</label>
+													<input type="tel" class="form-control" name="phone" id="phone" placeholder="Nomor Telepon" required>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
 													<label class="label" for="email">Alamat Email</label>
 													<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="label" for="subject">Subject</label>
-													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+													<label class="label" for="package">Pilih Paket</label>
+													<select class="form-control" name="package" id="package" required>
+														<option value="">-- Pilih Paket --</option>
+														<option value="harian">Paket Harian</option>
+														<option value="mingguan">Paket Mingguan</option>
+														<option value="bulanan">Paket Bulanan</option>
+														<option value="khusus">Paket Khusus</option>
+													</select>
 												</div>
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<label class="label" for="#">Pesan</label>
-													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Pesan" required></textarea>
+													<label class="label" for="maid">Pilih Maid</label>
+													<select class="form-control" name="maid" id="maid" required>
+														<option value="">-- Pilih Maid --</option>
+														<option value="maid1">Aril Nouzen</option>
+														<option value="maid2">Safira Rihavein</option>
+														<option value="maid3">Shiba Latrova</option>
+														<option value="maid3">Luthfi Redgrave</option>
+														<option value="maid3">Mufadhal Butler</option>
+													</select>
 												</div>
 											</div>
-									
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="date">Tanggal</label>
+													<input type="date" class="form-control" name="date" id="date" required>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="label" for="time">Jam</label>
+													<input type="time" class="form-control" name="time" id="time" required>
+												</div>
+											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<a href="https://mail.google.com/mail/?view=cm&fs=1&to=maidmaster@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda." target="_blank" id="sendEmailBtn" class="btn btn-primary">Kirim</a>
-													<div class="submitting"></div>
+													<label class="label" for="address">Alamat Lengkap</label>
+													<textarea name="address" class="form-control" id="address" cols="30" rows="4" placeholder="Alamat Lengkap" required></textarea>
 												</div>
-											</div>																															
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<a href="https://wa.me/628158099761" class="btn btn-primary" target="_blank">Kirim</a>
+												</div>
+											</div>											
 										</div>
 									</form>
 								</div>
 							</div>
 							<div class="col-md-5 d-flex align-items-stretch">
-								<div class="info-wrap w-100 p-5 img" style="background-image: url(images/111.jpg);">
+								<div class="info-wrap w-100 p-5 img" style="background-image: url(images/kawaii.jpg);">
 								</div>
 							</div>
 						</div>
@@ -183,15 +224,13 @@
 				</div>
 				<div class="col-md-12" style="width: 100%; height: 100%; overflow: hidden;">
 					<div class="map" style="width: 100%; height: 100%; padding-top: 10%;">
-						<iframe 
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5903110147046!2d106.73532807461666!3d-6.573276993420111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4c66144b88b%3A0xaaccd0e305d5d7b0!2sJl.%20H.%20Abbas%2C%20Dramaga%2C%20Kec.%20Dramaga%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1736048900581!5m2!1sen!2sid" 
-							style="border: 0; width: 100%; height: 100%;" 
-							allowfullscreen 
-							loading="lazy" 
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5903110147046!2d106.73532807461666!3d-6.573276993420111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4c66144b88b%3A0xaaccd0e305d5d7b0!2sJl.%20H.%20Abbas%2C%20Dramaga%2C%20Kec.%20Dramaga%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1736048900581!5m2!1sen!2sid"
+							style="border: 0; width: 100%; height: 100%;" allowfullscreen loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade">
 						</iframe>
 					</div>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</section>
@@ -202,13 +241,15 @@
 				<div class="col-lg-8 py-4">
 					<div class="row">
 						<div class="col-md-6 ftco-animate d-flex align-items-center">
-							<h2 class="mb-0" style="color:white; font-size: 24px; padding-bottom: 5%;">Berlangganan dengan kami</h2>
+							<h2 class="mb-0" style="color:white; font-size: 24px; padding-bottom: 5%;">Berlangganan
+								dengan kami</h2>
 						</div>
 						<div class="col-md-6 d-flex align-items-center">
 							<form action="#" class="subscribe-form">
 								<div class="form-group d-flex">
 									<input type="text" class="form-control" placeholder="Masukkan Email Anda">
-									<input type="submit" value="Subscribe" class="submit px-3 bg-secondary rounded" style="font-weight: bold;">
+									<input type="submit" value="Subscribe" class="submit px-3 bg-secondary rounded"
+										style="font-weight: bold;">
 								</div>
 							</form>
 						</div>
@@ -226,9 +267,17 @@
 					<p>Maid Mastery adalah layanan housekeeping profesional yang menyediakan berbagai pilihan paket pembersihan.
 						Layanan ini dirancang fleksibel dengan pilihan paket harian, mingguan, bulanan, atau khusus sesuai kebutuhan pelanggan, mengutamakan kualitas, kepercayaan, dan profesionalisme.</p>
 					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
-						<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-						<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+						<li class="ftco-animate">
+							<a href="https://wa.me/628158099761" target="_blank">
+								<span class="fa fa-whatsapp"></span>
+							</a>
+						</li>
+						<li class="ftco-animate">
+							<a href="mailto:maidmastery@gmail.com">
+								<span class="fa fa-envelope"></span>
+							</a>
+						</li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/maid_mastery?igsh=MWU2MTg1dWRqanVoaQ=="><span class="fa fa-instagram"></span></a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
@@ -257,14 +306,14 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
-					<h2 class="footer-heading">Link Cepat</h2>
+					<h2 class="footer-heading">Link</h2>
 					<ul class="list-unstyled">
-						<li><a href="#" class="py-1 d-block">Home</a></li>
-						<li><a href="#" class="py-1 d-block">About</a></li>
-						<li><a href="#" class="py-1 d-block">Jenis Layanan</a></li>
-						<li><a href="#" class="py-1 d-block">Harga</a></li>
-						<li><a href="#" class="py-1 d-block">Konten</a></li>
-						<li><a href="#" class="py-1 d-block">Hubungi Kami</a></li>
+						<li><a href="index.html" class="py-1 d-block">Home</a></li>
+						<li><a href="about.html" class="py-1 d-block">About</a></li>
+						<li><a href="services.html" class="py-1 d-block">Jenis Layanan</a></li>
+						<li><a href="pricing.html" class="py-1 d-block">Harga</a></li>
+						<li><a href="blog.html" class="py-1 d-block">Konten</a></li>
+						<li><a href="co" class="py-1 d-block">Kontak Kami</a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
@@ -272,7 +321,7 @@
 					<div class="block-23 mb-3">
 						<ul>
 							<li><a href="https://maps.app.goo.gl/Z8jxM1fCKq5k3zyt5"><span class="icon fa fa-map-marker"></span><span class="text">Jl. Dramaga Tengah, Kec. Dramaga, Kab. Bogor, 16680.</span></a></li>
-							<li><a href="https://wa.me/628158099761"><span class="icon fa fa-phone"></span><span class="text">+62 812 7450 213</span></a></li>
+							<li><a href="https://wa.me/628158099761"><span class="icon fa fa-phone"></span><span class="text">+62 815 8099 761</span></a></li>
 							<li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=your-email@gmail.com&su=Hello&body=Halo, saya ingin bertanya tentang layanan Anda."><span class="icon fa fa-paper-plane"></span><span class="text">maidmastery@gmail.com</span></a></li>
 						</ul>
 					</div>
@@ -318,37 +367,37 @@
 	<script src="js/main.js"></script>
 
 	<script>
-        document.getElementById('sendEmailBtn').addEventListener('click', function(event) {
-            event.preventDefault(); // Mencegah link default behavior (navigasi)
+		document.getElementById('sendEmailBtn').addEventListener('click', function (event) {
+			event.preventDefault(); // Mencegah link default behavior (navigasi)
 
-            let isValid = true;
-            let inputs = document.querySelectorAll('input[required], textarea[required]');
-            
-            inputs.forEach(input => {
-                if (!input.value) {
-                    isValid = false;
-                    input.style.borderColor = 'red'; // Highlight field if empty
-                } else {
-                    input.style.borderColor = ''; // Reset border color if input is filled
-                }
-            });
+			let isValid = true;
+			let inputs = document.querySelectorAll('input[required], textarea[required]');
 
-            if (!isValid) {
-                alert('Tolong lengkapi semua form yang wajib diisi!'); // Custom alert
-            } else {
-                // Jika form valid, membuka link email dengan data yang diisi
-                let name = document.getElementById('name').value;
-                let email = document.getElementById('email').value;
-                let subject = document.getElementById('subject').value;
-                let message = document.getElementById('message').value;
+			inputs.forEach(input => {
+				if (!input.value) {
+					isValid = false;
+					input.style.borderColor = 'red'; // Highlight field if empty
+				} else {
+					input.style.borderColor = ''; // Reset border color if input is filled
+				}
+			});
 
-                let mailtoLink = `mailto:maidmaster@gmail.com?subject=${encodeURIComponent(subject)}&body=Nama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0APesan:%0A${encodeURIComponent(message)}`;
-                
-                // Membuka aplikasi email dengan data yang telah diisi
-                window.location.href = mailtoLink;
-            }
-        });
-    </script>
+			// if (!isValid) {
+			// 	alert('Tolong lengkapi semua form yang wajib diisi!'); // Custom alert
+			// } else {
+			// 	// Jika form valid, membuka link email dengan data yang diisi
+			// 	let name = document.getElementById('name').value;
+			// 	let email = document.getElementById('email').value;
+			// 	let subject = document.getElementById('subject').value;
+			// 	let message = document.getElementById('message').value;
+
+			// 	let mailtoLink = `mailto:maidmaster@gmail.com?subject=${encodeURIComponent(subject)}&body=Nama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0APesan:%0A${encodeURIComponent(message)}`;
+
+			// 	// Membuka aplikasi email dengan data yang telah diisi
+			// 	window.location.href = mailtoLink;
+			// }
+		});
+	</script>
 
 </body>
 
