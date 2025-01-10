@@ -183,11 +183,11 @@
 													<label class="label" for="maid">Pilih Maid</label>
 													<select class="form-control" name="maid" id="maid" required>
 														<option value="">-- Pilih Maid --</option>
-														<option value="maid1">Aril Nouzen</option>
+														<option value="maid1">Ariel von Enfield</option>
 														<option value="maid2">Safira Rihavein</option>
 														<option value="maid3">Shiba Latrova</option>
 														<option value="maid3">Luthfi Redgrave</option>
-														<option value="maid3">Mufadhal Butler</option>
+														<option value="maid3">Mufadhal Cleverley</option>
 													</select>
 												</div>
 											</div>
@@ -214,8 +214,8 @@
 											</div>
 											<div class="col-md-12">
 												<div class="form-group">
-													<a href="https://wa.me/628158099761" class="btn btn-primary"
-														target="_blank">Kirim</a>
+													<button type="submit" id="submitBtn"
+														class="btn btn-primary">Kirim</button>
 												</div>
 											</div>
 										</div>
@@ -350,8 +350,8 @@
 					<p class="copyright">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> Maid Mastery by <a
-							href="https://colorlib.com" target="_blank">NeXpose</a>
+						<script>document.write(new Date().getFullYear());</script> InnoVision - STTNF TEKNIK INFORMATIKA
+						2024 by <a href="https://colorlib.com" target="_blank">Maid Mastery</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
@@ -386,38 +386,29 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		document.getElementById('sendEmailBtn').addEventListener('click', function (event) {
-			event.preventDefault();
+		document.getElementById('contactForm').addEventListener('submit', function (e) {
+			e.preventDefault(); // Menghentikan pengiriman form untuk sementara
 
-			let isValid = true;
-			let inputs = document.querySelectorAll('input[required], textarea[required]');
+			var isFormValid = true;
+			var formElements = document.getElementById('contactForm').elements;
 
-			inputs.forEach(input => {
-				if (!input.value) {
-					isValid = false;
-					input.style.borderColor = 'red';
-				} else {
-					input.style.borderColor = ''; 
+			// Buat cek jika ada field yg blm diisi
+			for (var i = 0; i < formElements.length; i++) {
+				if (formElements[i].hasAttribute('required') && formElements[i].value === '') {
+					isFormValid = false;
+					break;
 				}
-			});
+			}
 
-			// if (!isValid) {
-			// 	alert('Tolong lengkapi semua form yang wajib diisi!'); // Custom alert
-			// } else {
-			// 	// Jika form valid, membuka link email dengan data yang diisi
-			// 	let name = document.getElementById('name').value;
-			// 	let email = document.getElementById('email').value;
-			// 	let subject = document.getElementById('subject').value;
-			// 	let message = document.getElementById('message').value;
-
-			// 	let mailtoLink = `mailto:maidmaster@gmail.com?subject=${encodeURIComponent(subject)}&body=Nama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0APesan:%0A${encodeURIComponent(message)}`;
-
-			// 	// Membuka aplikasi email dengan data yang telah diisi
-			// 	window.location.href = mailtoLink;
-			// }
+			// Jika belum terisi semua, tampilkan popup peringatan
+			if (!isFormValid) {
+				alert('Tolong isi semua form sebelum mengirim.');
+			} else {
+				// Jika form sudah terisi semua, arahkan ke WhatsApp
+				window.location.href = 'https://wa.me/628158099761';
+			}
 		});
 	</script>
-
 </body>
 
 </html>
