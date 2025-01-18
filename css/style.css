@@ -4966,6 +4966,91 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   color: #212529; }
 
+/* Styling umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Section testimonial */
+.testimonial-section {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-container h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonial-container h2 span {
+  color: #f3e53d;
+  font-weight: bold;
+}
+
+.testimonial-content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.testimonial-text .highlight-bar {
+  display: inline-block;
+  width: 5px;
+  height: 50px;
+  background-color: #f3e53d;
+  margin-right: 15px;
+}
+
+.testimonial-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Pagination */
+.testimonial-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial-pagination .dot {
+    background-color: #ccc;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.testimonial-pagination .dot.active {
+    background-color: #f3e53d;
+}
+
+.testimonial-pagination .dot:hover {
+    background-color: #f3e53d;
+}
+/* end */
+
+
+
 .carousel {
   position: relative; }
 
