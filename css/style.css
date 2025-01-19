@@ -5021,6 +5021,33 @@ body {
   color: #fff;
 }
 
+/* Card */
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background-color: #2a98f1;
+}
+
+.article-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+/* End Card */
+
 /* Pagination */
 .testimonial-pagination {
     display: flex;
